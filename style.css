@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{background:#1769aa;color:white;padding:22px 5%;display:flex;justify-content:space-between;align-items:center;gap:15px}
+header h1{margin:0 0 6px;font-size:26px} header p{margin:0;opacity:.9}
+main{width:min(1200px,94%);margin:24px auto}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:20px}
+.card,.panel{background:white;border-radius:14px;box-shadow:0 3px 15px #00000010}
+.card{padding:20px}.card span{display:block;color:#667085;font-size:14px}.card strong{display:block;font-size:25px;margin-top:8px}
+.panel{padding:22px;margin-bottom:20px}
+h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+label{font-weight:bold;font-size:14px}input,select{width:100%;margin-top:7px;padding:12px;border:1px solid #d0d5dd;border-radius:9px;font-size:15px;background:white}
+button{border:0;border-radius:9px;padding:11px 16px;font-weight:bold;cursor:pointer}
+.primary{background:#1769aa;color:white;margin-top:18px}.danger{background:#d92d20;color:white}
+.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center}.toolbar input{max-width:350px;margin:0}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:900px}
+th,td{padding:12px 10px;border-bottom:1px solid #eaecf0;text-align:left;font-size:14px}
+th{background:#f9fafb}.status{padding:5px 9px;border-radius:20px;font-size:12px;font-weight:bold}
+.pending{background:#fff4cc;color:#8a5b00}.processing{background:#e8f1ff;color:#175cd3}.completed{background:#d1fadf;color:#027a48}.cancelled{background:#fee4e2;color:#b42318}
+.small{padding:7px 9px;background:#eef2f6}.delete{background:#fee4e2;color:#b42318}.empty{text-align:center;color:#667085;padding:25px}
+@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){header{align-items:flex-start}.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.toolbar{align-items:stretch;flex-direction:column}.toolbar input{max-width:none}}
